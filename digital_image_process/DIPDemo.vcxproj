@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F49D049C-CF73-49DE-8F41-B5D4B30CA4A7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>digitial_image_process</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\x86\Debug\</OutDir>
+    <IntDir>.\x86\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\x86\Release\</OutDir>
+    <IntDir>.\x86\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgEnhaAdapativeMediaF.cpp" />
+    <ClCompile Include="DlgEnhaAdapativeSmooth.cpp" />
+    <ClCompile Include="DlgEnhaEnhanceF.cpp" />
+    <ClCompile Include="DlgEnhaGaussianF.cpp" />
+    <ClCompile Include="DlgEnhaHpf1.cpp" />
+    <ClCompile Include="DlgEnhaHpf2.cpp" />
+    <ClCompile Include="DlgEnhaLpf1.cpp" />
+    <ClCompile Include="DlgEnhaLpf2.cpp" />
+    <ClCompile Include="DlgEnhaLpf3.cpp" />
+    <ClCompile Include="DlgEnhaLpf4.cpp" />
+    <ClCompile Include="DlgEnhaLpf5.cpp" />
+    <ClCompile Include="DlgEnhaLpf6.cpp" />
+    <ClCompile Include="DlgEnhaLpf7.cpp" />
+    <ClCompile Include="DlgEnhaMaxF.cpp" />
+    <ClCompile Include="DlgEnhaMediaF.cpp" />
+    <ClCompile Include="DlgEnhaMidF.cpp" />
+    <ClCompile Include="DlgEnhaMinF.cpp" />
+    <ClCompile Include="DlgFreqAlphaMeanF.cpp" />
+    <ClCompile Include="DlgFreqInvHarmonicF.cpp" />
+    <ClCompile Include="DlgFreqLadderHPF.cpp" />
+    <ClCompile Include="DlgFreqLadderLPF.cpp" />
+    <ClCompile Include="DlgMorphClose.cpp" />
+    <ClCompile Include="DlgMorphDilation.cpp" />
+    <ClCompile Include="DlgMorphErosion.cpp" />
+    <ClCompile Include="DlgMorphOpen.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DIP.cpp" />
+    <ClCompile Include="DIPDoc.cpp" />
+    <ClCompile Include="DIPView.cpp" />
+    <ClCompile Include="DlgColor.cpp" />
+    <ClCompile Include="DlgEdgeSimpthre.cpp" />
+    <ClCompile Include="DlgEdgeSobelPrewitt.cpp" />
+    <ClCompile Include="DlgFileInfoShow.cpp" />
+    <ClCompile Include="DlgFreqButterworthHPF.cpp" />
+    <ClCompile Include="DlgFreqButterworthLPF.cpp" />
+    <ClCompile Include="DlgFreqExpHPF.cpp" />
+    <ClCompile Include="DlgFreqExpLPF.cpp" />
+    <ClCompile Include="DlgFreqGaussBRF.cpp" />
+    <ClCompile Include="DlgFreqGaussHPF.cpp" />
+    <ClCompile Include="DlgFreqGaussLPF.cpp" />
+    <ClCompile Include="DlgFreqHighGain.cpp" />
+    <ClCompile Include="DlgFreqIdealHPF.cpp" />
+    <ClCompile Include="DlgFreqIdealLPF.cpp" />
+    <ClCompile Include="DlgGamma.cpp" />
+    <ClCompile Include="DlgGeoRota.cpp" />
+    <ClCompile Include="DlgGeoTran.cpp" />
+    <ClCompile Include="DlgGeoZoom.cpp" />
+    <ClCompile Include="DlgGeoZoom2.cpp" />
+    <ClCompile Include="DlgGrayScaling.cpp" />
+    <ClCompile Include="DlgHist.cpp" />
+    <ClCompile Include="DlgHough.cpp" />
+    <ClCompile Include="DlgLinerPara.cpp" />
+    <ClCompile Include="DlgLinTrans.cpp" />
+    <ClCompile Include="DlgLog.cpp" />
+    <ClCompile Include="DlgMidFilter.cpp" />
+    <ClCompile Include="DlgMorph.cpp" />
+    <ClCompile Include="DlgNoiseExp.cpp" />
+    <ClCompile Include="DlgNoiseGamma.cpp" />
+    <ClCompile Include="DlgNoiseGauss.cpp" />
+    <ClCompile Include="DlgNoiseRayleigh.cpp" />
+    <ClCompile Include="DlgNoiseSaltPepper.cpp" />
+    <ClCompile Include="DlgNoiseUniform.cpp" />
+    <ClCompile Include="DlgPointThre.cpp" />
+    <ClCompile Include="DlgPointWin.cpp" />
+    <ClCompile Include="DlgProjRestore.cpp" />
+    <ClCompile Include="DlgRGBHist.cpp" />
+    <ClCompile Include="DlgSharpThre.cpp" />
+    <ClCompile Include="DlgSmooth.cpp" />
+    <ClCompile Include="DlgWndTran.cpp" />
+    <ClCompile Include="Img.cpp" />
+    <ClCompile Include="ImgProcess.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgEnhaAdapativeMediaF.h" />
+    <ClInclude Include="DlgEnhaAdapativeSmooth.h" />
+    <ClInclude Include="DlgEnhaEnhanceF.h" />
+    <ClInclude Include="DlgEnhaGaussianF.h" />
+    <ClInclude Include="DlgEnhaHpf1.h" />
+    <ClInclude Include="DlgEnhaHpf2.h" />
+    <ClInclude Include="DlgEnhaLpf1.h" />
+    <ClInclude Include="DlgEnhaLpf2.h" />
+    <ClInclude Include="DlgEnhaLpf3.h" />
+    <ClInclude Include="DlgEnhaLpf4.h" />
+    <ClInclude Include="DlgEnhaLpf5.h" />
+    <ClInclude Include="DlgEnhaLpf6.h" />
+    <ClInclude Include="DlgEnhaLpf7.h" />
+    <ClInclude Include="DlgEnhaMaxF.h" />
+    <ClInclude Include="DlgEnhaMediaF.h" />
+    <ClInclude Include="DlgEnhaMidF.h" />
+    <ClInclude Include="DlgEnhaMinF.h" />
+    <ClInclude Include="DlgFreqAlphaMeanF.h" />
+    <ClInclude Include="DlgFreqInvHarmonicF.h" />
+    <ClInclude Include="DlgFreqLadderHPF.h" />
+    <ClInclude Include="DlgFreqLadderLPF.h" />
+    <ClInclude Include="DlgMorphClose.h" />
+    <ClInclude Include="DlgMorphDilation.h" />
+    <ClInclude Include="DlgMorphErosion.h" />
+    <ClInclude Include="DlgMorphOpen.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DIP.h" />
+    <ClInclude Include="DIPDoc.h" />
+    <ClInclude Include="DIPView.h" />
+    <ClInclude Include="DlgColor.h" />
+    <ClInclude Include="DlgEdgeSimpthre.h" />
+    <ClInclude Include="DlgEdgeSobelPrewitt.h" />
+    <ClInclude Include="DlgFileInfoShow.h" />
+    <ClInclude Include="DlgFreqButterworthHPF.h" />
+    <ClInclude Include="DlgFreqButterworthLPF.h" />
+    <ClInclude Include="DlgFreqExpHPF.h" />
+    <ClInclude Include="DlgFreqExpLPF.h" />
+    <ClInclude Include="DlgFreqGaussBRF.h" />
+    <ClInclude Include="DlgFreqGaussHPF.h" />
+    <ClInclude Include="DlgFreqGaussLPF.h" />
+    <ClInclude Include="DlgFreqHighGain.h" />
+    <ClInclude Include="DlgFreqIdealHPF.h" />
+    <ClInclude Include="DlgFreqIdealLPF.h" />
+    <ClInclude Include="DlgGamma.h" />
+    <ClInclude Include="DlgGeoRota.h" />
+    <ClInclude Include="DlgGeoTran.h" />
+    <ClInclude Include="DlgGeoZoom.h" />
+    <ClInclude Include="DlgGeoZoom2.h" />
+    <ClInclude Include="DlgGrayScaling.h" />
+    <ClInclude Include="DlgHist.h" />
+    <ClInclude Include="DlgHough.h" />
+    <ClInclude Include="DlgLinerPara.h" />
+    <ClInclude Include="DlgLinTrans.h" />
+    <ClInclude Include="DlgLog.h" />
+    <ClInclude Include="DlgMidFilter.h" />
+    <ClInclude Include="DlgMorph.h" />
+    <ClInclude Include="DlgNoiseExp.h" />
+    <ClInclude Include="DlgNoiseGamma.h" />
+    <ClInclude Include="DlgNoiseGauss.h" />
+    <ClInclude Include="DlgNoiseRayleigh.h" />
+    <ClInclude Include="DlgNoiseSaltPepper.h" />
+    <ClInclude Include="DlgNoiseUniform.h" />
+    <ClInclude Include="DlgPointThre.h" />
+    <ClInclude Include="DlgPointWin.h" />
+    <ClInclude Include="DlgProjRestore.h" />
+    <ClInclude Include="DlgRGBHist.h" />
+    <ClInclude Include="DlgSharpThre.h" />
+    <ClInclude Include="DlgSmooth.h" />
+    <ClInclude Include="DlgWndTran.h" />
+    <ClInclude Include="Img.h" />
+    <ClInclude Include="ImgProcess.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DIP.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DIP.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\DIP.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
