@@ -3,7 +3,7 @@ clear all;
 close all;
 
 image_path = 'C:\Users\Administrator\MatlabProject\DIP\1.jpg';
-%% ---------------- 读取图像 ---------------- %%
+%% ---------------- image read ---------------- %%
 image_origin  = imread(image_path);                      % 读取图像
 image_gray    = rgb2gray(image_origin);                 % 彩色图像转灰度图像
 [heigth, width] = size(image_gray);                           % height为图像高度，width为图像宽度
