@@ -1,0 +1,17 @@
+%% RGB to CMY
+function image = RGB2CMY(image_origin)
+
+image_double = im2double(image_origin);                     % covert the image to double
+image_R = image_double(:, :, 1);                            % read red channel
+image_G = image_double(:, :, 2);                            % read green channel
+image_B = image_double(:, :, 3);                            % read blue channel
+
+image_C = 1 - image_R;
+image_M = 1 - image_G;
+image_Y = 1 - image_B;
+
+image_C = uint8(image_C * 255);
+image_M = uint8(image_M * 255);
+image_Q = uint8(image_Q * 255);image_Q(image_Q < 0) = 0;image_Q(image_Q > 255) = 255;
+
+image = cat(3, image_cyan, image_magenta, image_yellow);

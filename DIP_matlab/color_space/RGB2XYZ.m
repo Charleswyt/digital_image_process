@@ -1,9 +1,9 @@
 %% RGB to XYZ
 function image = RGB2XYZ(image_origin)
 
-image_red = image_origin(:, :, 1);                         % read red channel
-image_green = image_origin(:, :, 2);                     % read green channel
-image_blue = image_origin(:, :, 3);                        % read blue channel
+image_red = image_origin(:, :, 1);                          % read red channel
+image_green = image_origin(:, :, 2);                        % read green channel
+image_blue = image_origin(:, :, 3);                         % read blue channel
 transformation_matrix = ...
     [   0.412453, 0.357580, 0.180423;
     0.212671, 0.715160, 0.072169;

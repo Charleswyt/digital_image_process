@@ -1,9 +1,9 @@
 %% RGB to YCbCr
 function image = RGB2YCbCr(image_origin)
 
-image_red = image_origin(:, :, 1);                         % read red channel
-image_green = image_origin(:, :, 2);                     % read green channel
-image_blue = image_origin(:, :, 3);                        % read blue channel
+image_red = image_origin(:, :, 1);                          % read red channel
+image_green = image_origin(:, :, 2);                        % read green channel
+image_blue = image_origin(:, :, 3);                         % read blue channel
 transformation_matrix = ...
     [  0.299, 0.587, 0.114, 0;
     -0.1687, -0.3313, 0.500, 128;

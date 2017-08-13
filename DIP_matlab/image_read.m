@@ -9,11 +9,11 @@
 % if the parameter 'original_image_type' is not used, the default is set to RGB
 
 function [image, height, width] = image_read(image_file_path, output_image_type, original_image_type)
-image_origin = imread(image_file_path);                 % read original image
+image_origin = imread(image_file_path);                  % read original image
 try
     [height, width, channel] = size(image_origin);       % get the dimension information of 3-D image
 catch
-    [height, width] = size(image_origin);                      % get the dimension information of 2-D image
+    [height, width] = size(image_origin);                % get the dimension information of 2-D image
 end
 
 % read gray image
@@ -34,7 +34,7 @@ if channel == 3
             image = image_origin;
         elseif strcmp(output_image_type, 'GRAY')
             % imae = rgb2gray(image_origin);
-            image = RGB2Gray(image_origin);
+            image = RGB2GRAY(image_origin);
         elseif strcmp(output_image_type, 'XYZ')
             image = RGB2XYZ(image_origin);
         elseif strcmp(output_image_type, 'CMY')

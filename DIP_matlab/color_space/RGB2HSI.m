@@ -1,10 +1,10 @@
 %% RGB to HSI
 function image = RGB2HSI(image_origin)
 
-image_double = im2double(image_origin);         % convert the original image to double
-image_red = image_double(:, :, 1);                       % read red channel
-image_green = image_double(:, :, 2);                   % read green channel
-image_blue = image_double(:, :, 3);                      % read blue channel
+image_double = im2double(image_origin);                     % convert the original image to double
+image_red = image_double(:, :, 1);                          % read red channel
+image_green = image_double(:, :, 2);                        % read green channel
+image_blue = image_double(:, :, 3);                         % read blue channel
 
 %% calculate H
 theta_numerator = ((image_red - image_green) + (image_red - image_blue)) / 2;
