@@ -15,8 +15,5 @@ image_R = transformation_matrix(1, 1) * image_Y + transformation_matrix(1, 2) * 
 image_G = transformation_matrix(2, 1) * image_Y + transformation_matrix(2, 2) * image_U + transformation_matrix(2, 3) * image_V;
 image_B = transformation_matrix(3, 1) * image_Y + transformation_matrix(3, 2) * image_U + transformation_matrix(3, 3) * image_V;
 
-image_R = uint8(image_R * 255);image_R(image_R < 0) = 0;image_R(image_R > 255) = 255;
-image_G = uint8(image_G * 255);image_G(image_G < 0) = 0;image_G(image_G > 255) = 255;
-image_B = uint8(image_B * 255);image_B(image_B < 0) = 0;image_B(image_B > 255) = 255;
-
 image = cat(3, image_R, image_G, image_B);
+image = max(min(image, 255), 0);
