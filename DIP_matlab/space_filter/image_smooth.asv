@@ -1,5 +1,0 @@
-%% smooth the image
-function image = image_smooth(image_origin, method)
-
-% ¼òµ¥¾ùÖµÂË²¨
-templete_average = 

@@ -1,3 +1,4 @@
+%% ¼ÆËãÁÚÓòÌİ¶È
 function gradient = neighbor_gradient(neighbor_block)
 
 [height, width] = size(neighbor_block);

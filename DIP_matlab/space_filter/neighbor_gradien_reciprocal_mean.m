@@ -1,3 +1,4 @@
+%% 邻域梯度倒数均值滤波
 function image = neighbor_gradien_reciprocal_mean(image_origin, filter_size)
 
 if nargin == 1

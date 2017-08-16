@@ -1,4 +1,5 @@
-function image = neighbor_gradien_reciprocal_mean(image_origin, filter_size)
+%% 最大值滤波
+function image = neighbor_max_filter(image_origin, filter_size)
 
 if nargin == 1
     filter_size = 3;
@@ -8,16 +9,11 @@ end
 cut_size = filter_size - 1;
 image = zeros(height - cut_size, width - cut_size);
 
+% 最大值滤波
 for h = 1:height-filter_size+1
     for w = 1:width-filter_size+1
         block = image_origin(h:h+filter_size-1, w:w+filter_size-1);
-        weights = neighbor_gradien_reciprocal(block);
-        block_weights = double(block) .* weights;
-        image(h, w) = sum(block_weights(:));
+        image(h, w) = max(block(:));
     end
 end
-
-image = uint8(image);
 image = image_padding(image_origin, image);
-
-end

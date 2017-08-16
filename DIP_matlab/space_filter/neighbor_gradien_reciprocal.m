@@ -1,3 +1,4 @@
+%% ¼ÆËãÁÚÓòÌİ¶Èµ¹Êı
 function weights = neighbor_gradien_reciprocal(neighbor_block)
 
 gradient_block = neighbor_gradient(neighbor_block);
